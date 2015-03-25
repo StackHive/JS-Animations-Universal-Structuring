@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <!--
+			Copyright (c) 2015 by StackHive (http://codepen.io/StackHive/pen/xbMWQp)
+
+			Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+			The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+			THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+			-->
+		<title>Structuring Complex Animations with JS</title>
+		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/sh-default.css">
+	</head>
+	<body>
+		<section class="section1">
+			<div>
+				<h1>Structured Animation Using jQuery Transit and an organized Javascript Object</h1>
+				<br>
+				<h4>Using a Javascript Object to structure the animations and attaching them to HTML with only a data-attribute. Very easy to manage and extend. </h4>
+				<hr>
+				<p>Scroll Down To check it in action</p>
+			</div>
+		</section>
+		<section data-sh-animate="dance-animation" class="section2">
+			<div class="animate" style="transform: translate(0px, 0px) rotate(0deg); opacity: 0; color: white;">
+				<h1>Let's Dance in repeat 10 times!</h1>
+			</div>
+		</section>
+		<section data-sh-animate="slide-animation-fromtop" class="section3">
+			<div class="animate" style="transform: translate(0px, -150px); opacity: 0;">
+				<h1>Let's slide in this top section's content from TOP.</h1>
+			</div>
+		</section>
+		<section data-sh-animate="slide-animation-fromleft" class="section2">
+			<div class="animate" style="transform: translate(-150px, 0px); opacity: 0;">
+				<h1>Content sliding from LEFT when the section is in view</h1>
+			</div>
+		</section>
+		<section class="section3" data-sh-animate="slide-animation-fromright">
+			<div class="animate" style="transform: translate(150px, 0px); opacity: 0;">
+				<h1>Content sliding from RIGHT when the section is in view </h1>
+			</div>
+		</section>
+		<section class="section2" data-sh-animate="slide-animation-frombottom">
+			<div class="animate" style="transform: translate(0px, 150px); opacity: 0;">
+				<h1>Content sliding from BOTTOM when the section is in view </h1>
+			</div>
+		</section>
+		<section class="section3" data-sh-animate="slide-animation-fromtopleft">
+			<div class="animate" style="transform: translate(-250px, -350px); opacity: 0;">
+				<h1>Content sliding from TOP LEFT when the section is in view </h1>
+			</div>
+		</section>
+		<section class="section2" data-sh-animate="slide-animation-fromtopright">
+			<div class="animate" style="transform: translate(250px, -350px); opacity: 0;">
+				<h1>Content sliding from TOP RIGHT when the section is in view </h1>
+			</div>
+		</section>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
+		<script src="http://cdn.stackhive.com/direct/js/jquerywaypoints.min.js"></script>
+		<script src="./assets/js/animation.js"></script>
+	</body>
+</html>
